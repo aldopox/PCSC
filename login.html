@@ -1,0 +1,109 @@
+<html>
+<body>
+	<link href='https://fonts.googleapis.com/css?family=Glory' rel='stylesheet'>
+<style>
+body {
+  		background-color: 'Black';
+   		font-family: 'Glory';
+		font-size: 16px;
+		color: "black";
+}
+#box {
+		width:33%;
+		margin:15px;
+		padding:15px;
+		background: #e8d5a0;
+		border-radius: 40px 40px 40px 40px;
+}
+#box p{
+		white-space:pre;
+}
+input {
+		width:18%;
+}
+</style>
+	<center>
+		<div id="box">
+			<svg width="100" height="100">
+ 			<circle cx="50" cy="50" r="7" stroke="#52504d" stroke-width="10" fill="hsla(0, 93%, 50%, 1)" /></svg>
+		<h1>Benvenuto!</h1>
+		<b>Inserisci i tuoi dati</b>
+
+		<br></br>
+		<table style='table-layout:fixed;'">
+  		<tr>
+   			<td></td>
+    			<td>
+                <form action="/login" method="post">
+
+ 				Inserisci email:<input style="width:100%"; type="text" id="u" placeholder="Email o ID fotocamera" name="u"><br></td>
+    			<td></td>
+  		</tr>
+ 		 <tr>
+    			<td></td>
+    			<td>
+ 				Inserisci password:<input style="width:100%" type="password" id="p" placeholder="Password" name="p">
+    			<td></td>
+  		</tr>
+		<tr>
+   			<td></td>
+    			<td>
+			<br>
+  				<label for="oggetti">Scegli cosa vuoi vedere da questa lista:</label></td>
+  		</tr>
+		<tr>
+   			<td></td>
+    			<td><table style="width:110%">
+				<tr>
+					<td>
+						<input type="checkbox" id="oggetto1" name="oggetto1" value="Bike">
+ 			 			<label for="oggetto1">Persona</label><br>
+ 						<input type="checkbox" id="oggetto2" name="oggetto2" value="Car">
+		  				<label for="oggetto2">Animale</label><br>
+		 				<input type="checkbox" id="oggetto3" name="oggetto3" value="Boat">
+						<label for="oggetto3">Palla</label><br>
+						<input type="checkbox" id="oggetto4" name="oggetto4" value="Bike">
+ 		 				<label for="oggetto4">Telefono</label><br>
+ 					</td>
+					<td>
+						<input type="checkbox" id="oggetto5" name="oggetto5" value="Bike">
+ 			 			<label for="oggetto5">Persona</label><br>
+ 						<input type="checkbox" id="oggetto6" name="oggetto6" value="Car">
+		  				<label for="oggetto6">Animale</label><br>
+		 				<input type="checkbox" id="oggetto7" name="oggetto7" value="Boat">
+						<label for="oggetto7">Bottiglia</label><br>
+						<input type="checkbox" id="oggetto8" name="oggetto8" value="Bike">
+ 		 				<label for="oggetto8">Telefono</label><br>
+					</td>
+					<td>
+						<input type="checkbox" id="oggetto9" name="oggetto9" value="Bike">
+						<label for="oggetto9">Mouse</label><br>
+ 						<input type="checkbox" id="oggetto10" name="oggetto10" value="Car">
+		  				<label for="oggetto10">Palla</label><br>
+ 	 					<input type="checkbox" id="oggetto11" name="oggetto11" value="Boat">
+ 	 					<label for="oggetto11">Foglio</label><br>
+						<input type="checkbox" id="oggetto12" name="oggetto12" value="Boat">
+ 	 					<label for="oggetto12">Vaso</label><br>
+					</td>
+  		</tr>
+		</table>
+		<td></td>
+		</tr>
+		<tr>
+		<td>
+		</td>
+		<td>
+		<br>
+		<center>
+		<input style="width:100%" type="submit">
+		</center>
+		</td>
+		<td>
+		</td>
+		</tr>
+		</table>
+		</form>
+		</div>
+	</center>
+</body>
+</html>
