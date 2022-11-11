@@ -1,5 +1,5 @@
 from typing import Dict
-from flask import Flask, request, Response
+from flask import Flask, request, Response, render_template
 from os import path
 
 DATABASE_PATH = "database"
@@ -9,7 +9,7 @@ class CircularBuffer:
         # check if file already exist if not create it
         self.max_lines = max_lines
         self.filename = f"{DATABASE_PATH}/{cam_id}.csv"
-        if not path.exists(self.filename): 
+        if not path.exists(self.filename):
             with open(self.filename, 'w') as f: pass
 
     def add_data(self, data):
@@ -41,5 +41,15 @@ def my_form():
 
     return Response(status = 204)
 
+@app.route('/login', methods=['POST'])
+def login():
+    return str(list(request.form.values()))
+
+@app.route('/')
+def home():                         #aggiungere metodo di visualizzazione dei dati inseriti
+    return render_template("login.html")
+#mix fra dati della fotocamera e dati di home
+
 if __name__ == '__main__':
    app.run(debug = True)
+
